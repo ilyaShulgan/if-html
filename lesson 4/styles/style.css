@@ -12,7 +12,7 @@
 }
 
 .line-offer {
-       background-color: #F5BD41;
+    background-color: #F5BD41;
     margin: auto;
     width: 100px;
     height: 4px;
@@ -25,11 +25,12 @@
 }
 
 .text {
-       text-align: center;
+    text-align: center;
     font-size: 24px;
     margin-top: auto;
     margin-bottom: 4px;
 }
+
 .block {
     display: inline-block;
     width: 296px;
