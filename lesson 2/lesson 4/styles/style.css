@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+}
+
+.annotation {
+
+    text-align: center;
+    margin-top: 120px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-decoration-color: #383838;
+}
+
+.line-offer {
+       background-color: #F5BD41;
+    margin: auto;
+    width: 100px;
+    height: 4px;
+    margin-bottom: 84px;
+}
+
+.vector {
+    margin: 4px 110px;
+
+}
+
+.text {
+       text-align: center;
+    font-size: 24px;
+    margin-top: auto;
+    margin-bottom: 4px;
+}
+.block {
+    display: inline-block;
+    width: 296px;
+    height: 176px;
+    padding-bottom: 0px;
+}
+
+.block-all {
+    margin-right: 104px;
+    margin-left: 104px;
+    display: flex;
+    justify-content: center
+
+}
