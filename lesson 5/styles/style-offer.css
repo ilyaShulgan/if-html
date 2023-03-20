@@ -7,8 +7,8 @@
 }
 
 .rectangle-offer {
-    width: 1440px;
-    height: 569px;
+    width: 100%;
+    height: 570px;
 }
 
 .title-offer {
@@ -30,8 +30,7 @@
 .block-offer {
     display: flex;
     margin: 0 104px;
-    gap: 16px;
-}
+    }
 
 .block-support {
     width: 296px;
