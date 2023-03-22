@@ -29,6 +29,7 @@
 
 .block-offer {
     display: flex;
+    justify-content: center;
     margin: 0 104px;
 }
 
