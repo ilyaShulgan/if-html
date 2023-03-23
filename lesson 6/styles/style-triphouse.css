@@ -90,6 +90,7 @@
     height: 65px;
     margin: 24px 104px 105px;
     border: 3px solid #F3F3F4;
+    border-right-color: #3077C6;
     border-radius: 8px;
     background-color: #FFFFFF;
 }
@@ -97,26 +98,26 @@
 .navi-city {
     display: inline-block;
     width: 430px;
-    height: 60px;
+    height: 64px;
     vertical-align: top;
     font-family: 'Roboto', sans-serif;
     text-decoration-color: #383838;
     font-size: 18px;
     border: 0;
     padding-left: 24px;
-    margin-right: 3px;
+    margin: -1px 3px -1px 0;
 
 }
 
 .calendar {
     display: inline-block;
     width: 260px;
-    height: 61px;
+    height: 64px;
     border: 3px solid #F5BD41;
     border-radius: 8px;
     vertical-align: top;
     align-content: center;
-    /*padding: auto;*/
+    margin: -2px 0;
 
 }
 
@@ -151,18 +152,19 @@
 }
 
 .triphouse-search {
-    width: 192px;
-    height: 67px;
+    width: 198px;
+    height: 70px;
     font-family: 'Roboto', sans-serif;
     text-decoration-color: #FFFFFF;
     font-size: 24px;
     background-color: #3077C6;
     border-radius: 8px;
     border: 3px solid #3077C6;
-    margin: 0;
+    margin: -2px -2px -2px 0;
     color: #FFFFFF;
 }
-.img-gp{
+
+.img-gp {
     display: inline-block;
     width: 135px;
     height: 40px;
@@ -174,7 +176,8 @@
     /*border: ;*/
 
 }
-.img-as{
+
+.img-as {
     display: inline-block;
     width: 120px;
     height: 40px;
