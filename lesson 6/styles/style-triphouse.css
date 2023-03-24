@@ -1,0 +1,187 @@
+@import url('font-roboto-400-regular.css');
+@import url('font-roboto-500-medium.css');
+
+* {
+    margin: 0;
+}
+
+.fone {
+    width: 1440px;
+    height: 900px;
+    /*width: 100%;*/
+    /*height: 900vh;*/
+    background-image: url('../images/fon-triphouse.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 51px;
+
+}
+
+.triphouse-head {
+    width: 1230px;
+    height: 46px;
+    margin: 0 104px 120px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.night-day {
+    background-image: url('../images/sprite.png');
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-position: 0;
+    margin: 5px 24px 11px;
+}
+
+.account-circle {
+    background-image: url('../images/sprite.png');
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: -30px;
+    margin: 0 0 6px;
+}
+
+.text-triphouse {
+
+    font-size: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-right: 24px
+}
+
+.stays {
+    padding-bottom: 12px;
+    border-bottom: 4px solid #F5BD41;
+}
+
+.text-triphouse-head {
+    display: inline-block;
+    vertical-align: top;
+    margin: 6px 0 12px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.triphouse-inscription {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 50px;
+    color: #FFFFFF;
+    margin: 200px 0 100px 104px;
+}
+
+.triphouse-navi {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.t-name {
+    margin: 0 221px 24px 128px;
+
+}
+
+.navi-line {
+    display: flex;
+    width: 1225px;
+    height: 65px;
+    margin: 24px 104px 105px;
+    border: 3px solid #F3F3F4;
+    border-right-color: #3077C6;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+
+.navi-city {
+    display: inline-block;
+    width: 430px;
+    height: 64px;
+    vertical-align: top;
+    font-family: 'Roboto', sans-serif;
+    text-decoration-color: #383838;
+    font-size: 18px;
+    border: 0;
+    padding-left: 24px;
+    margin: -1px 3px -1px 0;
+
+}
+
+.calendar {
+    display: inline-block;
+    width: 260px;
+    height: 64px;
+    border: 3px solid #F5BD41;
+    border-radius: 8px;
+    vertical-align: top;
+    align-content: center;
+    margin: -2px 0;
+
+}
+
+.calendar-in {
+    display: inline-block;
+    width: 48%;
+    margin: 23px 1px 20px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.calendar-out {
+    display: inline-block;
+    width: 48%;
+    margin: 23px 1px 20px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+.quantity {
+    width: 266px;
+    height: 60px;
+    vertical-align: top;
+    font-family: 'Roboto', sans-serif;
+    text-decoration-color: #383838;
+    font-size: 18px;
+    border: 0;
+    padding-left: 24px;
+    margin-right: 3px;
+}
+
+.triphouse-search {
+    width: 198px;
+    height: 70px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration-color: #FFFFFF;
+    font-size: 24px;
+    background-color: #3077C6;
+    border-radius: 8px;
+    border: 3px solid #3077C6;
+    margin: -2px -2px -2px 0;
+    color: #FFFFFF;
+}
+
+.img-gp {
+    display: inline-block;
+    width: 135px;
+    height: 40px;
+    background-image: url('../images/sprite.png');
+    background-size: cover;
+    background-position: -70px;
+    margin: 0 15px 0 585px;
+
+    /*border: ;*/
+
+}
+
+.img-as {
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    background-image: url('../images/sprite.png');
+    background-size: cover;
+    background-position: -205px;
+}
