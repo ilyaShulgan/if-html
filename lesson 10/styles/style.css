@@ -130,7 +130,6 @@
     width: 50px;
 }
 
-
 .triphouse__attractions:after {
     display: inline-block;
     position: absolute;
@@ -365,7 +364,7 @@
     max-width: 296px;
     aspect-ratio: 1/1;
     margin-bottom: 24px;
-    cursor:pointer
+    cursor: pointer
 }
 
 .homes_signature {
