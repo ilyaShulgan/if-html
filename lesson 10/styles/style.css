@@ -186,11 +186,11 @@
 }
 
 .triphouse__navi {
-    grid-template-columns: 28% 1fr 20px 1fr 2fr;
+    grid-template-columns: 40% 1fr 15px 1fr 2fr;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: #FFFFFF;
-    margin-left: 24px;
+    margin: 0 -80px;
 }
 
 ._t-name {
@@ -211,6 +211,7 @@
 .triphouse__form {
     width: 100%;
     padding: 0 104px;
+
 }
 
 .triphouse__form-line {
@@ -400,6 +401,222 @@
     color: #BFBFBF;
     font-size: 24px;
     font-weight: 400;
+}
+
+.destinations_container {
+    width: 100%;
+    padding: 120px 104px 120px;
+    position: relative;
+    /*background-color: #E5E5E5;*/
+}
+
+.destinations_title {
+    font-family: 'Roboto', sans-serif;
+    text-decoration-color: #383838;
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 105px;
+}
+
+.destinations__navi {
+    margin-bottom: 65px;
+}
+
+.destinations__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dest__a {
+    text-decoration: none;
+}
+
+.dest__list {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #383838;
+    background-color: #F3F3F4;
+    margin: 0 -2px;
+    padding: 17px 0;
+
+}
+
+.dest__regions {
+    margin-left: 0;
+    width: 192px;
+    height: 64px;
+    border-bottom-left-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.dest__regions:hover {
+    border-radius: 8px;
+    background-color: #3077C6;
+    color: #FFFFFF;
+}
+
+.dest__cities {
+    width: 192px;
+    height: 64px;
+}
+
+.dest__cities:hover {
+    border-radius: 8px;
+    background-color: #3077C6;
+    color: #FFFFFF;
+}
+
+.dest__places {
+    width: 240px;
+    height: 64px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.dest__places-md {
+    display: none;
+}
+
+.dest__places:hover {
+    border-radius: 8px;
+    background-color: #3077C6;
+    color: #FFFFFF;
+}
+
+.destinations__block {
+    display: grid;
+    column-gap: 16px;
+    margin-bottom: 48px;
+}
+
+.destinations__img {
+    width: 100%;
+    max-width: 296px;
+    aspect-ratio: 1/1;
+    margin-bottom: 25px;
+}
+
+.dest__text {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    color: #3077C6;
+}
+
+.figure_maldives {
+    position: relative;
+}
+
+.book_now {
+    opacity: 0.2;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    transform: translate(50%);
+    right: 50%;
+    width: 128px;
+    height: 48px;
+    border: 1px solid #3077C6;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #3077C6;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    padding: 13px 0;
+}
+
+.book_now:hover, .book_now:focus {
+    opacity: 1;
+    box-shadow: 0 4px 70px #383838;
+}
+
+.destinations__pointer {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #F3F3F4;
+    padding: 8px 16px;
+    transform: rotate(90deg);
+    margin-left: 48%;
+    margin-right: 49%;
+}
+
+.sign__container {
+    max-width: 1232px;
+    padding: 24px 24px 52px;
+    margin: 0 104px;
+    background-color: #EAF0F9;
+}
+
+.sign__cross {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    max-width: 1184px;
+    height: 26px;
+    fill: #BFBFBF;
+}
+
+.sign__logo-md {
+    display: none;
+}
+
+._cross {
+    width: 26px;
+    height: 26px;
+}
+
+.sign__users {
+    display: inline-block;
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    padding: 21px 18px;
+    margin-right: 24px;
+}
+
+.sign__group {
+    display: inline-block;
+    width: 50px;
+    height: 44px;
+    fill: #3077C6;
+}
+
+.sign__section {
+    display: inline-block;
+    height: 86px;
+}
+
+.sign__article {
+    font-family: 'Roboto', sans-serif;
+    color: #383838;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 21px;
+}
+
+.sign__button {
+    width: 128px;
+    height: 48px;
+    border: 1px solid #3077C6;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #3077C6;
+    text-align: center;
+    padding: 12px 0;
+}
+
+.sign__install-md {
+    display: none;
 }
 
 .col-lg-1 {
@@ -746,7 +963,7 @@
     }
 
     .triphouse__form {
-        padding: 0 60px;
+        padding: 0;
     }
 
     .triphouse__form-line {
@@ -1040,6 +1257,10 @@
         display: none;
     }
 
+    .triphouse__form {
+        padding: 0 16px;
+    }
+
     .triphouse__form-line {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 48px);
@@ -1047,7 +1268,7 @@
         gap: 8px;
         height: auto;
         padding: 8px;
-        margin: 0 16px;
+        margin: 0;
         border-radius: 0;
     }
 
@@ -1255,49 +1476,248 @@
     }
 
     .homes__container {
-        padding: 30px 30px;
+        padding: 40px 15px 56px 17px;
     }
 
     .homes__title {
-        font-size: 24px;
-        margin-bottom: 20px;
+        font-size: 28px;
+        margin-bottom: 32px;
     }
 
     .homes__block {
-        column-gap: 10px;
+        column-gap: 16px;
     }
 
     .homes_img {
         width: 100%;
-        max-width: 180px;
+        max-width: 156px;
         aspect-ratio: 1/1;
         margin-bottom: 12px;
     }
 
     .homes_signature {
-        font-size: 10px;
+        font-size: 12px;
+    }
+
+    .homes_text {
+        font-size: 12px;
     }
 
     .homes__pointer {
-
-        right: -2%;
-        top: 5%;
+        right: -4%;
+        top: 25%;
         box-shadow: 2px 2px 2px #959597;
-        width: 10px;
-        height: 50px;
-        border-radius: 3px;
-        background-color: #F3F3F4;
-        padding: 15px 1px 15px 1px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        padding: 4px 5px 8px 10px;
     }
 
     .polygon2 {
         fill: #383838;
-        width: 7px;
-        height: 19px;
+        width: 5px;
+        height: 13px;
     }
 
-    .homes_text {
-        font-size: 10px;
+    .sub_villa_kunerad {
+        display: none;
+    }
+
+    .sub_hostel_friendship {
+        display: none;
+    }
+
+    .destinations_container {
+        width: 100%;
+        padding: 40px 15px 40px 17px;
+    }
+
+    .destinations_title {
+        font-size: 28px;
+        margin-bottom: 37px;
+    }
+
+    .destinations__navi {
+        margin-bottom: 24px;
+    }
+
+    .destinations__list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .dest__a {
+        text-decoration: none;
+    }
+
+    .dest__list {
+        font-size: 19px;
+        padding: 5px 0;
+        background-color: #ffffff;
+        border: 1px solid #F3F3F4;
+    }
+
+    .dest__regions {
+        margin-left: 0;
+        width: 99px;
+        height: 32px;
+        border-radius: 8px;
+    }
+
+    .dest__regions:hover {
+        border-radius: 8px;
+        background-color: #3077C6;
+        color: #FFFFFF;
+    }
+
+    .dest__cities {
+        width: 98px;
+        height: 32px;
+        margin: 0 15px;
+        border-radius: 8px;
+    }
+
+    .dest__cities:hover {
+        border-radius: 8px;
+        background-color: #3077C6;
+        color: #FFFFFF;
+    }
+
+    .dest__places {
+        display: none;
+    }
+
+    .dest__places-md {
+        display: inline-block;
+        width: 98px;
+        height: 32px;
+        border-radius: 8px;
+    }
+
+    .dest__places-md:hover {
+        border-radius: 8px;
+        background-color: #3077C6;
+        color: #FFFFFF;
+    }
+
+    .destinations__block {
+        margin-bottom: 40px;
+        justify-items: center;
+    }
+
+    .destinations__img {
+        width: 100%;
+        max-width: 156px;
+        aspect-ratio: 1/1;
+        margin-bottom: 8px;
+    }
+
+    .dest__text {
+        font-size: 12px;
+    }
+
+
+    .book_now {
+        display: none;
+    }
+
+    .figure_norway {
+        display: none;
+    }
+
+    .figure_island {
+        display: none;
+    }
+
+    .destinations__pointer {
+        display: inline-block;
+        position: absolute;
+        right: 2%;
+        top: 53%;
+        box-shadow: 2px 2px 2px #959597;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        padding: 4px 5px 8px 10px;
+        transform: none;
+        margin: 0;
+    }
+
+    .sign__container {
+        display: grid;
+        grid-template-columns: 16px 1fr 2fr 1fr;
+        grid-template-rows: auto;
+        column-gap: 16px;
+        max-width: 100%;
+        padding: 24px 17px;
+        margin: 0;
+        background-color: #ffffff;
+
+    }
+
+    .sign__cross {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+margin: auto;
+    }
+
+    ._cross {
+        width: 16px;
+        height: 16px;
+
+    }
+
+    .sign__logo-md {
+        display: inline-block;
+        width: 58px;
+        height: 58px;
+        border-radius: 4px;
+        background-color: #3077C6;
+        margin: auto;
+    }
+
+    .sign__logo_vector {
+        width: 53px;
+        height: 11px;
+        fill: #ffffff;
+        margin: 23px 2px;
+    }
+
+    .sign__users {
+        display: none;
+    }
+
+    .sign__group {
+        display: none;
+
+    }
+
+    .sign__section {
+        display: inline-block;
+        height: auto;
+        align-self: center;
+    }
+
+    .sign__article {
+        font-size: 12px;
+        font-weight: 400;
+margin: 0;
+
+    }
+
+    .sign__button {
+        display: none;
+    }
+
+    .sign__install-md {
+        display: inline-block;
+        font-family: 'Roboto', sans-serif;
+        color: #3077C6;
+        font-size: 14px;
+        font-weight: 500;
+        margin: auto;
     }
 
     .footer {
@@ -1321,7 +1741,6 @@
 
     .footer__title {
         font-size: 15px;
-
     }
 
     .footer__block {
