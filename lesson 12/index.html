@@ -11,34 +11,40 @@
   <title>lesson 12</title>
 </head>
 <body>
-<div class="triphouse__fone xs-1-col md-1-col">
-  <div class="triphouse__conteiner lg-3-col md-2-col xs-2-col triphouse__head">
+<section class="container triphouse__fone xs-1-col md-1-col">
+  <section class="triphouse__conteiner lg-3-col md-2-col xs-2-col triphouse__head">
     <div>
       <svg class="triphouse__logo_vector">
         <use href="./images/sprite.svg#triphouse-logo_vector" />
       </svg>
     </div>
-    <div class="triphouse__text-head">
+    <nav class="triphouse__text-head">
       <a class="triphouse__text triphouse__steys" href="#">Stays</a>
       <a class="triphouse__text triphouse__attractions" href="#">Attractions</a>
-    </div>
+    </nav>
     <div class="triphouse__icon">
+      <button>
       <svg class="triphouse__night">
         <use href="./images/sprite.svg#triphouse-night" />
       </svg>
+      </button>
+      <button>
       <svg class="triphouse__account-circle">
         <use href="./images/sprite.svg#triphouse-account_circle" />
       </svg>
+      </button>
+      <button>
       <svg class="triphouse__menu">
         <use href="./images/sprite.svg#triphouse-menu" />
       </svg>
+      </button>
     </div>
-  </div>
+  </section>
   <h3 class="triphouse__conteiner triphouse__inscription">Discover stays <br>
     to live, work or just relax
   </h3>
-  <div class=" triphouse__form">
-    <div class="triphouse__conteiner lg-5-col md-5-col triphouse__navi">
+  <section class=" triphouse__form">
+    <article class="triphouse__conteiner lg-5-col md-5-col triphouse__navi">
       <div class=_t-name">Your destination or hotel name
       </div>
       <div class="_t-check-in"> Check-in date
@@ -47,7 +53,7 @@
       </div>
       <div class="_t-check-out">Check-out date
       </div>
-    </div>
+    </article>
     <form class="triphouse__conteiner lg-13-col md-13-col xs-1-col triphouse__form-line">
       <input class="triphouse__form-city" type="text" name="city" id="hotel-name" placeholder="New York ">
       <input class="triphouse__form-city-mob" type="text" name="city" id="hotel-name2"
@@ -87,14 +93,14 @@
         <use href="./images/sprite.svg#triphouse-as" />
       </svg>
     </div>
-  </div>
-</div>
-<div class="offer">
-  <div class="offer__head">
+  </section>
+</section>
+<section class="container offer">
+  <header class="offer__head">
     <h2 class="offer__title">What do we offer</h2>
     <div class="offer__line"></div>
-  </div>
-  <div class="offer__block">
+  </header>
+  <section class="offer__block">
     <div class="col-lg-3 col-xs-3 col-md-5">
       <div class="offer__subblock">
         <svg class="offer__vector">
@@ -127,9 +133,9 @@
         <h3 class="offer__text">Real guest reviews</h3>
       </div>
     </div>
-  </div>
-</div>
-<div class="homes__container">
+  </section>
+</section>
+<section class="container homes__container">
   <h2 class="homes__title">Homes guests loves</h2>
   <div class="homes__block lg-4-col md-4-col xs-2-col">
     <button class="homes__pointer">
@@ -157,8 +163,8 @@
       <h5 class="homes_text">Berlin, Germany</h5>
     </div>
   </div>
-</div>
-<div class="destinations_container">
+</section>
+<section class="container destinations_container">
   <header class="destinations_title">
     The best destinations
   </header>
@@ -208,13 +214,13 @@
   <button class="destinations__pointer">
     <img src="images/polygon.png" alt="pol">
   </button>
-</div>
-<div class="sign__container">
-  <figure class="sign__cross">
+</section>
+<section class="container sign__container">
+  <button class="sign__cross">
     <svg class="_cross">
       <use href="./images/sprite.svg#sign-cross" />
     </svg>
-  </figure>
+  </button>
   <figure class="sign__logo-md">
     <svg class="sign__logo_vector">
       <use href="./images/sprite.svg#triphouse-logo_vector" />
@@ -229,11 +235,11 @@
     <article class="sign__article">Sign up and get 20% off your first booking</article>
     <button class="sign__button">Sign up</button>
   </section>
-  <aside class="sign__install-md">
+  <div class="sign__install-md">
     Install
-  </aside>
-</div>
-<section class="reviews__container">
+  </div>
+</section>
+<section class="container reviews__container">
   <header class="reviews__title">Guests reviews</header>
   <section class="reviews__block ">
     <button class="reviews__pointer">
@@ -345,10 +351,10 @@
     <span class="_circles"></span>
   </div>
 </section>
-<div class="footer">
+<section class="container footer">
   <div class="footer__vector">
   </div>
-  <div class="footer__block">
+  <footer class="footer__block">
     <div class="col-lg-3 col-md-4 col-xs-1">
       <div class="footer__col">
         <div><a href="#" class="footer__title __about">About</a>
@@ -409,9 +415,9 @@
         </ul>
       </div>
     </div>
-  </div>
+  </footer>
   <span class="footer__end">&#169; 2022Triphouse, Inc. All rights reserved
         </span>
-</div>
+</section>
 </body>
 </html>

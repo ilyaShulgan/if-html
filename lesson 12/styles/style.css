@@ -4,12 +4,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Roboto:wght@500&display=swap');
 
 :root {
-    --col-width: calc(100% / 12)
+    --col-width: calc(100% / 12);
+    --blue: #3077C6;
+    --yellow: #F5BD41;
+    --white: #FFFFFF;
+}
+
+.container {
+    max-width: 1232px;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
 * {
     margin: 0;
     box-sizing: border-box;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+    -webkit-font-smoothing: inherit;
+    -moz-osx-font-smoothing: inherit;
+    -webkit-appearance: none;
+    cursor: pointer;
 }
 
 .lg-1-col {
@@ -78,8 +105,9 @@
 }
 
 .triphouse__fone {
+    /*max-width: 1440px;*/
+    max-width: 100%;
     width: 100%;
-    height: 900px;
     background-image: url('../images/fon-triphouse.jpg');
     background-repeat: no-repeat;
     background-position: top center;
@@ -87,15 +115,16 @@
 }
 
 .triphouse__conteiner {
+    max-width: 1232px;
+    height: 46px;
     display: grid;
     width: 100%;
     margin: 0 auto;
-    padding: 0 104px;
+    padding: 0 104px 120px;
 }
 
 .triphouse__head {
     width: 100%;
-    height: 46px;
     grid-template-columns: 1fr 2fr 94px;
     margin-bottom: 196px;
 }
@@ -103,7 +132,7 @@
 .triphouse__logo_vector {
     width: 205px;
     height: 40px;
-    fill: #3077C6;
+    fill: var(--blue);
 }
 
 .triphouse__text-head {
@@ -116,13 +145,12 @@
 }
 
 .triphouse__steys:after {
-    display: inline-block;
     position: absolute;
-    left: 514px;
-    bottom: 0;
+    right: 195px;
+    bottom: 25px;
     width: 0;
     height: 4px;
-    background-color: #F5BD41;
+    background-color: var(--yellow);
     content: "";
     transition: width 0.3s ease-out;
 }
@@ -135,10 +163,10 @@
     display: inline-block;
     position: absolute;
     right: 85px;
-    bottom: 0;
+    bottom: 40%;
     width: 0;
     height: 4px;
-    background-color: #F5BD41;
+    background-color: var(--yellow);
     content: "";
     transition: width 0.3s ease-out;
 }
@@ -159,21 +187,21 @@
     height: 40px;
     background-size: cover;
     margin: 0 0 6px;
-    fill: #FFFFFF;
+    fill: var(--white);
 }
 
 .triphouse__menu {
     display: none;
     width: 24px;
     height: 16px;
-    fill: #FFFFFF;
+    fill: var(--white);
     margin: 12px 14px 18px;
 }
 
 
 .triphouse__text {
     font-size: 24px;
-    color: #FFFFFF;
+    color: var(--white);
     text-decoration: none;
     margin-right: 20px
 }
@@ -182,15 +210,15 @@
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 50px;
-    color: #FFFFFF;
+    color: var(--white);
     margin-bottom: 100px;
 }
 
 .triphouse__navi {
-    grid-template-columns: 40% 1fr 15px 1fr 2fr;
+    grid-template-columns: 40% 1fr 15px 1fr 1fr;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    color: #FFFFFF;
+    color: var(--white);
     margin: 0 -80px;
 }
 
@@ -211,7 +239,9 @@
 
 .triphouse__form {
     width: 100%;
+    max-width: 1232px;
     padding: 0 104px;
+    margin: 0 auto;
 
 }
 
@@ -221,7 +251,7 @@
     padding: 0;
     margin: 22px 0 118px;
     border-radius: 8px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
 }
 
 .triphouse__form-city {
@@ -249,7 +279,7 @@
 }
 
 .triphouse__form-calendar {
-    border: 3px solid #F5BD41;
+    border: 3px solid var(--yellow);
     border-radius: 8px;
     margin: 0 -4px;
     padding: 18px 0 19px;
@@ -314,7 +344,7 @@
 
 .triphouse__img-gp {
     justify-self: end;
-}
+   }
 
 .triphouse__img-as {
     margin-left: 16px;
@@ -323,8 +353,7 @@
 }
 
 .homes__container {
-    width: 100%;
-    padding: 120px 104px;
+     padding: 120px 104px;
     background-color: #EAF0F9;
 
 }
@@ -343,12 +372,7 @@
     display: grid;
     column-gap: 16px;
     position: relative;
-}
-
-
-.homes__subblock {
-    height: 435px;
-}
+  }
 
 .homes_img {
     width: 100%;
@@ -361,7 +385,7 @@
 .homes_signature {
     display: block;
     font-family: 'Roboto', sans-serif;
-    color: #3077C6;
+    color: var(--blue);
     font-size: 24px;
     text-decoration: none;
     margin-bottom: 1em;
@@ -397,8 +421,7 @@
     width: 100%;
     padding: 120px 104px 120px;
     position: relative;
-    /*background-color: #E5E5E5;*/
-}
+    }
 
 .destinations_title {
     font-family: 'Roboto', sans-serif;
@@ -538,9 +561,9 @@
 }
 
 .sign__container {
-    max-width: 1232px;
+
     padding: 24px 24px 52px;
-    margin: 0 104px;
+    margin: 0 auto;
     background-color: #EAF0F9;
 }
 
@@ -548,7 +571,7 @@
     display: flex;
     justify-content: end;
     width: 100%;
-    max-width: 1184px;
+    margin: 0;
     height: 26px;
     fill: #BFBFBF;
 }
@@ -2127,7 +2150,7 @@
     .review__circles {
         display: flex;
         justify-content: center;
-         }
+    }
 
     ._circles {
         display: inline-block;
