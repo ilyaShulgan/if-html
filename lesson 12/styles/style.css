@@ -453,7 +453,7 @@ button {
     text-align: center;
     color: #383838;
     background-color: #F3F3F4;
-    margin: 0 -2px;
+    margin: 0 -3px;
     padding: 17px 0;
 
 }
@@ -468,8 +468,8 @@ button {
 
 .dest__regions:hover {
     border-radius: 8px;
-    background-color: #3077C6;
-    color: #FFFFFF;
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 .dest__cities {
@@ -1265,7 +1265,7 @@ button {
         height: 30px;
         left: 98%;
         top: 20%;
-        padding: 6px 0 3px 11px;
+        padding: 5px 8px 3px 11px;
     }
 
 
@@ -1860,11 +1860,11 @@ button {
         height: 13px;
     }
 
-    .sub_villa_kunerad {
+    .homes__subblock-3 {
         display: none;
     }
 
-    .sub_hostel_friendship {
+    .homes__subblock-4 {
         display: none;
     }
 
