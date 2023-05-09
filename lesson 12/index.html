@@ -24,19 +24,19 @@
     </nav>
     <div class="triphouse__icon">
       <button>
-      <svg class="triphouse__night">
-        <use href="./images/sprite.svg#triphouse-night" />
-      </svg>
+        <svg class="triphouse__night">
+          <use href="./images/sprite.svg#triphouse-night" />
+        </svg>
       </button>
       <button>
-      <svg class="triphouse__account-circle">
-        <use href="./images/sprite.svg#triphouse-account_circle" />
-      </svg>
+        <svg class="triphouse__account-circle">
+          <use href="./images/sprite.svg#triphouse-account_circle" />
+        </svg>
       </button>
       <button>
-      <svg class="triphouse__menu">
-        <use href="./images/sprite.svg#triphouse-menu" />
-      </svg>
+        <svg class="triphouse__menu">
+          <use href="./images/sprite.svg#triphouse-menu" />
+        </svg>
       </button>
     </div>
   </section>
@@ -168,7 +168,7 @@
   <header class="destinations_title">
     The best destinations
   </header>
-  <nav class="destinations__navi">
+  <div class="destinations__navi">
     <ul class="destinations__list">
       <a href="#" class="dest__a">
         <li class="dest__list dest__regions">
@@ -189,8 +189,8 @@
         </li>
       </a>
     </ul>
-  </nav>
-  <main class="destinations__block lg-4-col md-4-col xs-2-col">
+  </div>
+  <div class="destinations__block lg-4-col md-4-col xs-2-col">
     <section>
       <div class="destinations__figure maldives">
         <img src="./images/destinations/maldives.png" alt="maldives" class="destinations__img dest__maldives">
@@ -210,145 +210,154 @@
       <img src="./images/destinations/island.png" alt="island" class="destinations__img dest__island">
       <a href="#" class="dest__a dest__text">Island</a>
     </section>
-  </main>
+  </div>
   <button class="destinations__pointer">
     <img src="images/polygon.png" alt="pol">
   </button>
 </section>
-<section class="container sign__container">
-  <button class="sign__cross">
-    <svg class="_cross">
-      <use href="./images/sprite.svg#sign-cross" />
-    </svg>
-  </button>
-  <figure class="sign__logo-md">
-    <svg class="sign__logo_vector">
-      <use href="./images/sprite.svg#triphouse-logo_vector" />
-    </svg>
-  </figure>
-  <figure class="sign__users">
-    <svg class="sign__group">
-      <use href="./images/sprite.svg#sign-group" />
-    </svg>
-  </figure>
-  <section class="sign__section">
-    <article class="sign__article">Sign up and get 20% off your first booking</article>
-    <button class="sign__button">Sign up</button>
-  </section>
-  <div class="sign__install-md">
-    Install
-  </div>
-</section>
-<section class="container reviews__container">
-  <header class="reviews__title">Guests reviews</header>
-  <section class="reviews__block ">
-    <button class="reviews__pointer">
-      <img src="images/polygon.png" alt="pol">
+<section class="position-md">
+  <section class="container sign__container">
+    <button class="sign__cross">
+      <svg class="_cross">
+        <use href="./images/sprite.svg#sign-cross" />
+      </svg>
     </button>
-    <article class="reviews__cards lg-3-col md-2-col xs-1-col">
-      <div class="review__card review__card1">
-        <figure class="review__image">
-          <img src="./images/reviews/bali.jpg" alt="bali" class="review__img">
-          <div class="review__price">From 250 USD</div>
-        </figure>
-        <section class="review__section">
-          <article class="review__navi">
-            <div class="review__links">
-              <a href="#" class="review__link review__hotel">Ubud Bali Resort&SPA</a>
-              <a href="#" class="review__link review__city">Bali, Indonesia</a>
-            </div>
-            <div class="review__attendance">
-              <div class="review__grade">9,4</div>
-              <div class="review__quantity">1324 reviews</div>
-            </div>
-          </article>
-          <div class="review__account">
-            <figure>
-              <svg class="review__account-circle">
-                <use href="./images/sprite.svg#triphouse-account_circle" />
-              </svg>
-            </figure>
-            <div class="review__client">
-              <div class="review__name">Hanna Ivanova</div>
-              <div class="review__country"><img src="./images/reviews/icon/ua.png"> Ukraine</div>
-            </div>
-          </div>
-          <p class="review__text">Great location, really pleasant and clean rooms, but the thing that makes this such a
-            good place to stay are
-            the staff. All of the people are incredibly helpful and generous with their time and advice. </p>
-        </section>
-      </div>
-      <div class="review__card review__card2">
-        <figure class="review__image">
-          <img src="./images/reviews/rotterdam.jpg" alt="KingKong" class="review__img">
-          <div class="review__price">From 40 USD</div>
-        </figure>
-        <section class="review__section">
-          <article class="review__navi">
-            <div class="review__links">
-              <a href="#" class="review__link review__hotel">King Kong Hostel</a>
-              <a href="#" class="review__link review__city">Rotterdam, Netherlands</a>
-            </div>
-            <div class="review__attendance">
-              <div class="review__grade">8,9</div>
-              <div class="review__quantity">2016 reviews</div>
-            </div>
-          </article>
-          <div class="review__account">
-            <figure>
-              <svg class="review__account-circle">
-                <use href="./images/sprite.svg#triphouse-account_circle" />
-              </svg>
-            </figure>
-            <div class="review__client">
-              <div class="review__name">Adam Smith</div>
-              <div class="review__country"><img src="./images/reviews/icon/us.png"> USA</div>
-            </div>
-          </div>
-          <p class="review__text">I've been in this hostel for a month and here is the best hostel of all
-            Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and excellent
-            Most importantly, those who work here are kind and good-natured. </p>
-        </section>
-      </div>
-      <div class="review__card review__card3">
-        <figure class="review__image">
-          <img src="./images/reviews/ourika.jpg" alt="Rokoko" class="review__img">
-          <div class="review__price">From 100 USD</div>
-        </figure>
-        <section class="review__section">
-          <article class="review__navi">
-            <div class="review__links">
-              <a href="#" class="review__link review__hotel">Rokoko Hotel</a>
-              <a href="#" class="review__link review__city">Ourika, Marocco</a>
-            </div>
-            <div class="review__attendance">
-              <div class="review__grade">9,1</div>
-              <div class="review__quantity">815 reviews</div>
-            </div>
-          </article>
-          <div class="review__account">
-            <figure>
-              <svg class="review__account-circle">
-                <use href="./images/sprite.svg#triphouse-account_circle" />
-              </svg>
-            </figure>
-            <div class="review__client">
-              <div class="review__name">Anika Messer</div>
-              <div class="review__country"><img src="./images/reviews/icon/de.png"> Germany</div>
-            </div>
-          </div>
-          <p class="review__text">Efficient, friendly, professional, and appropriately attentive. Great hotel in a great
-            location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay at
-            this location during my next stay in Marocco. </p>
-        </section>
-      </div>
-    </article>
+    <figure class="sign__logo-md">
+      <svg class="sign__logo_vector">
+        <use href="./images/sprite.svg#triphouse-logo_vector" />
+      </svg>
+    </figure>
+    <figure class="sign__users">
+      <svg class="sign__group">
+        <use href="./images/sprite.svg#sign-group" />
+      </svg>
+    </figure>
+    <section class="sign__section">
+      <article class="sign__article">Sign up and get 20% off your first booking</article>
+      <button class="sign__button">Sign up</button>
+    </section>
+    <button class="sign__install-md">
+      Install
+    </button>
   </section>
-  <div class="review__circles">
-    <span class="_circles"></span>
-    <span class="_circles"></span>
-    <span class="_circles"></span>
-    <span class="_circles"></span>
+  <div class="review">
+    <section class="container reviews__container">
+      <header class="reviews__title">Guests reviews</header>
+      <section class="reviews__block ">
+        <button class="reviews__pointer">
+          <img src="images/polygon.png" alt="pol">
+        </button>
+        <article class="reviews__cards lg-3-col md-2-col xs-1-col">
+          <div class="review__card review__card1">
+            <figure class="review__image">
+              <img src="./images/reviews/bali.jpg" alt="bali" class="review__img">
+              <div class="review__price">From 250 USD</div>
+            </figure>
+            <section class="review__section">
+              <article class="review__navi">
+                <div class="review__links">
+                  <a href="#" class="review__link review__hotel">Ubud Bali Resort&SPA</a>
+                  <a href="#" class="review__link review__city">Bali, Indonesia</a>
+                </div>
+                <div class="review__attendance">
+                  <div class="review__grade">9,4</div>
+                  <div class="review__quantity">1324 reviews</div>
+                </div>
+              </article>
+              <div class="review__account">
+                <figure>
+                  <svg class="review__account-circle">
+                    <use href="./images/sprite.svg#triphouse-account_circle" />
+                  </svg>
+                </figure>
+                <div class="review__client">
+                  <div class="review__name">Hanna Ivanova</div>
+                  <div class="review__country"><img src="./images/reviews/icon/ua.png"> Ukraine</div>
+                </div>
+              </div>
+              <p class="review__text">Great location, really pleasant and clean rooms, but the thing that makes this
+                such
+                a
+                good place to stay are
+                the staff. All of the people are incredibly helpful and generous with their time and advice. </p>
+            </section>
+          </div>
+          <div class="review__card review__card2">
+            <figure class="review__image">
+              <img src="./images/reviews/rotterdam.jpg" alt="KingKong" class="review__img">
+              <div class="review__price">From 40 USD</div>
+            </figure>
+            <section class="review__section">
+              <article class="review__navi">
+                <div class="review__links">
+                  <a href="#" class="review__link review__hotel">King Kong Hostel</a>
+                  <a href="#" class="review__link review__city">Rotterdam, Netherlands</a>
+                </div>
+                <div class="review__attendance">
+                  <div class="review__grade">8,9</div>
+                  <div class="review__quantity">2016 reviews</div>
+                </div>
+              </article>
+              <div class="review__account">
+                <figure>
+                  <svg class="review__account-circle">
+                    <use href="./images/sprite.svg#triphouse-account_circle" />
+                  </svg>
+                </figure>
+                <div class="review__client">
+                  <div class="review__name">Adam Smith</div>
+                  <div class="review__country"><img src="./images/reviews/icon/us.png"> USA</div>
+                </div>
+              </div>
+              <p class="review__text">I've been in this hostel for a month and here is the best hostel of all
+                Excellent management of excellent and ethical staff and bedrooms Bathrooms are always clean and
+                excellent
+                Most importantly, those who work here are kind and good-natured. </p>
+            </section>
+          </div>
+          <div class="review__card review__card3">
+            <figure class="review__image">
+              <img src="./images/reviews/ourika.jpg" alt="Rokoko" class="review__img">
+              <div class="review__price">From 100 USD</div>
+            </figure>
+            <section class="review__section">
+              <article class="review__navi">
+                <div class="review__links">
+                  <a href="#" class="review__link review__hotel">Rokoko Hotel</a>
+                  <a href="#" class="review__link review__city">Ourika, Marocco</a>
+                </div>
+                <div class="review__attendance">
+                  <div class="review__grade">9,1</div>
+                  <div class="review__quantity">815 reviews</div>
+                </div>
+              </article>
+              <div class="review__account">
+                <figure>
+                  <svg class="review__account-circle">
+                    <use href="./images/sprite.svg#triphouse-account_circle" />
+                  </svg>
+                </figure>
+                <div class="review__client">
+                  <div class="review__name">Anika Messer</div>
+                  <div class="review__country"><img src="./images/reviews/icon/de.png"> Germany</div>
+                </div>
+              </div>
+              <p class="review__text">Efficient, friendly, professional, and appropriately attentive. Great hotel in a
+                great
+                location. Easy access to all the surrounding historical sites. Staff is fantastic. Will definitely stay
+                at
+                this location during my next stay in Marocco. </p>
+            </section>
+          </div>
+        </article>
+      </section>
+      <div class="review__circles">
+        <span class="_circles"></span>
+        <span class="_circles"></span>
+        <span class="_circles"></span>
+        <span class="_circles"></span>
+      </div>
+    </section>
   </div>
 </section>
 <section class="container footer">
@@ -416,7 +425,7 @@
       </div>
     </div>
   </footer>
-  <span class="footer__end">&#169; 2022Triphouse, Inc. All rights reserved
+  <span class="footer__end">&#169; 2022 Triphouse, Inc. All rights reserved
         </span>
 </section>
 </body>

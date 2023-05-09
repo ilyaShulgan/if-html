@@ -6,8 +6,15 @@
 :root {
     --col-width: calc(100% / 12);
     --blue: #3077C6;
+    --blue-bac: #10367C;
     --yellow: #F5BD41;
-    --white: #FFFFFF;
+    --white: #ffffff;
+    --white-bac: #EAF0F9;
+    --white-background: #F3F3F4;
+    --grey: #BFBFBF;
+    --box-shadow: #959597;
+    --text-color: #383838;
+    --border-black: #333333;
 }
 
 .container {
@@ -105,7 +112,6 @@ button {
 }
 
 .triphouse__fone {
-    /*max-width: 1440px;*/
     max-width: 100%;
     width: 100%;
     background-image: url('../images/fon-triphouse.jpg');
@@ -116,17 +122,15 @@ button {
 
 .triphouse__conteiner {
     max-width: 1232px;
-    height: 46px;
     display: grid;
     width: 100%;
     margin: 0 auto;
-    padding: 0 104px 120px;
 }
 
 .triphouse__head {
     width: 100%;
     grid-template-columns: 1fr 2fr 94px;
-    margin-bottom: 196px;
+    margin-bottom: 176px;
 }
 
 .triphouse__logo_vector {
@@ -215,11 +219,12 @@ button {
 }
 
 .triphouse__navi {
-    grid-template-columns: 40% 1fr 15px 1fr 1fr;
+    grid-template-columns: 28% 2fr 15px 2fr 4fr;
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     color: var(--white);
-    margin: 0 -80px;
+    margin: 16px;
+    margin-left: 24px;
 }
 
 ._t-name {
@@ -238,9 +243,7 @@ button {
 }
 
 .triphouse__form {
-    width: 100%;
     max-width: 1232px;
-    padding: 0 104px;
     margin: 0 auto;
 
 }
@@ -257,7 +260,7 @@ button {
 .triphouse__form-city {
     vertical-align: top;
     font-family: 'Roboto', sans-serif;
-    text-decoration-color: #383838;
+    text-decoration-color: var(--text-color);
     font-size: 18px;
     border: 0;
     padding-left: 24px;
@@ -270,7 +273,7 @@ button {
     display: none;
     vertical-align: top;
     font-family: 'Roboto', sans-serif;
-    text-decoration-color: #383838;
+    text-decoration-color: var(--text-color);
     font-size: 18px;
     border: 0;
     padding-left: 24px;
@@ -308,7 +311,7 @@ button {
 
 .triphouse__form-quantity {
     font-family: 'Roboto', sans-serif;
-    text-decoration-color: #383838;
+    text-decoration-color: var(--text-color);
     font-size: 16px;
     border: 0;
     margin: auto;
@@ -317,14 +320,14 @@ button {
 .quantity {
     width: 30px;
     font-family: 'Roboto', sans-serif;
-    text-decoration-color: #383838;
+    text-decoration-color: var(--text-color);
     font-size: 14px;
     border: 0;
 }
 
 .quantity-text {
     font-family: 'Roboto', sans-serif;
-    text-decoration-color: #383838;
+    text-decoration-color: var(--text-color);
     font-size: 16px;
     margin-left: -20px;
     margin-right: 0;
@@ -333,18 +336,19 @@ button {
 .triphouse__form-search {
     height: 70px;
     font-family: 'Roboto', sans-serif;
-    text-decoration-color: #FFFFFF;
+    text-decoration-color: var(--white);
     font-size: 24px;
-    background-color: #3077C6;
+    background-color: var(--blue);
     border-radius: 8px;
-    border: 3px solid #3077C6;
+    border: 3px solid var(--blue);
     margin: -2px -8px -2px 8px;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .triphouse__img-gp {
     justify-self: end;
-   }
+    margin-bottom: 120px;
+}
 
 .triphouse__img-as {
     margin-left: 16px;
@@ -353,15 +357,16 @@ button {
 }
 
 .homes__container {
-     padding: 120px 104px;
-    background-color: #EAF0F9;
+    max-width: 100%;
+    padding: 120px 104px;
+    background-color: var(--white-bac);
 
 }
 
 
 .homes__title {
     font-family: 'Roboto', sans-serif;
-    text-decoration-color: #383838;
+    text-decoration-color: var(--text-color);
     font-size: 40px;
     font-weight: 500;
     text-align: center;
@@ -372,7 +377,7 @@ button {
     display: grid;
     column-gap: 16px;
     position: relative;
-  }
+}
 
 .homes_img {
     width: 100%;
@@ -395,37 +400,37 @@ button {
     position: absolute;
     right: -2%;
     top: 30%;
-    box-shadow: 5px 5px 5px #959597;
+    box-shadow: 5px 5px 5px var(--box-shadow);
     display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #F3F3F4;
+    background-color: var(--white-background);
     padding: 10px 17px 11px 16px;
 }
 
 .polygon {
-    fill: #383838;
+    fill: var(--text-color);
     width: 7px;
     height: 19px;
 }
 
 .homes_text {
     font-family: 'Roboto', sans-serif;
-    color: #BFBFBF;
+    color: var(--grey);
     font-size: 24px;
     font-weight: 400;
 }
 
 .destinations_container {
-    width: 100%;
-    padding: 120px 104px 120px;
+    max-width: 100%;
+    padding: 120px calc(104px - 16px) 120px 104px;
     position: relative;
-    }
+}
 
 .destinations_title {
     font-family: 'Roboto', sans-serif;
-    text-decoration-color: #383838;
+    text-decoration-color: var(--text-color);
     font-size: 40px;
     font-weight: 500;
     text-align: center;
@@ -451,8 +456,8 @@ button {
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
     text-align: center;
-    color: #383838;
-    background-color: #F3F3F4;
+    color: var(--text-color);
+    background-color: var(--white-background);
     margin: 0 -3px;
     padding: 17px 0;
 
@@ -479,8 +484,8 @@ button {
 
 .dest__cities:hover {
     border-radius: 8px;
-    background-color: #3077C6;
-    color: #FFFFFF;
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 .dest__places {
@@ -496,8 +501,8 @@ button {
 
 .dest__places:hover {
     border-radius: 8px;
-    background-color: #3077C6;
-    color: #FFFFFF;
+    background-color: var(--blue);
+    color: var(--white);
 }
 
 .destinations__block {
@@ -517,7 +522,7 @@ button {
     display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 24px;
-    color: #3077C6;
+    color: var(--blue);
 }
 
 .maldives {
@@ -533,10 +538,10 @@ button {
     right: 50%;
     width: 128px;
     height: 48px;
-    border: 1px solid #3077C6;
+    border: 1px solid var(--blue);
     border-radius: 8px;
-    background-color: #FFFFFF;
-    color: #3077C6;
+    background-color: var(--white);
+    color: var(--blue);
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     text-align: center;
@@ -545,7 +550,7 @@ button {
 
 .book_now:hover, .book_now:focus {
     opacity: 1;
-    box-shadow: 0 4px 70px #383838;
+    box-shadow: 0 4px 70px var(--text-color);
 }
 
 .destinations__pointer {
@@ -553,7 +558,7 @@ button {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #F3F3F4;
+    background-color: var(--white-background);
     padding: 8px 16px;
     transform: rotate(90deg);
     margin-left: 48%;
@@ -564,7 +569,7 @@ button {
 
     padding: 24px 24px 52px;
     margin: 0 auto;
-    background-color: #EAF0F9;
+    background-color: var(--white-bac);
 }
 
 .sign__cross {
@@ -573,7 +578,7 @@ button {
     width: 100%;
     margin: 0;
     height: 26px;
-    fill: #BFBFBF;
+    fill: var(--grey);
 }
 
 .sign__logo-md {
@@ -590,7 +595,7 @@ button {
     width: 86px;
     height: 86px;
     border-radius: 50%;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     padding: 21px 18px;
     margin-right: 24px;
 }
@@ -599,7 +604,7 @@ button {
     display: inline-block;
     width: 50px;
     height: 44px;
-    fill: #3077C6;
+    fill: var(--blue);
 }
 
 .sign__section {
@@ -609,7 +614,7 @@ button {
 
 .sign__article {
     font-family: 'Roboto', sans-serif;
-    color: #383838;
+    color: var(--text-color);
     font-size: 24px;
     font-weight: 500;
     margin-bottom: 21px;
@@ -618,12 +623,12 @@ button {
 .sign__button {
     width: 128px;
     height: 48px;
-    border: 1px solid #3077C6;
+    border: 1px solid var(--blue);
     border-radius: 8px;
-    background-color: #FFFFFF;
+    background-color: var(--white);
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    color: #3077C6;
+    color: var(--blue);
     text-align: center;
     padding: 12px 0;
 }
@@ -633,7 +638,7 @@ button {
 }
 
 .reviews__container {
-    max-width: 1440px;
+    max-width: 100%;
     padding: 120px 104px;
 }
 
@@ -641,7 +646,7 @@ button {
     text-align: center;
     margin-bottom: 104px;
     font-size: 40px;
-    color: #383838;
+    color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
@@ -655,25 +660,24 @@ button {
     z-index: 1;
     right: -2%;
     top: 25%;
-    box-shadow: 5px 5px 5px #959597;
+    box-shadow: 5px 5px 5px var(--box-shadow);
     display: inline-block;
     width: 40px;
     height: 40px;
     border: none;
     border-radius: 50%;
-    background-color: #F3F3F4;
+    background-color: var(--white-background);
     padding: 10px 17px 11px 16px;
 }
 
 .reviews__cards {
     display: grid;
     column-gap: 16px;
-    min-height: 760px;
+    align-self: last baseline;
 }
 
 .review__card1, .review__card3 {
-    min-height: 760px;
-    background-color: #EAF0F9;
+    background-color: var(--white-bac);
 }
 
 .review__image {
@@ -692,14 +696,14 @@ button {
     padding: 16px 0 11px 24px;
     position: absolute;
     bottom: 0;
-    color: #FFFFFF;
+    color: var(--white);
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
 
 }
 
 .review__section {
-    background-color: #EAF0F9;
+    background-color: var(--white-bac);
     padding: 24px 24px 66px;
 
 }
@@ -715,7 +719,7 @@ button {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     margin-bottom: 24px;
-    color: #3077C6;
+    color: var(--blue);
 }
 
 .review__hotel {
@@ -732,8 +736,8 @@ button {
     width: 48px;
     height: 32px;
     padding: 4px 11px;
-    background-color: #10367C;
-    color: #ffffff;
+    background-color: var(--blue-bac);
+    color: var(--white);
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     font-weight: 600;
@@ -747,7 +751,7 @@ button {
     display: block;
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    color: #BFBFBF;
+    color: var(--grey);
 
 }
 
@@ -761,7 +765,7 @@ button {
 .review__account-circle {
     width: 53px;
     aspect-ratio: 1/1;
-    fill: #BFBFBF;
+    fill: var(--grey);
 }
 
 .review__client {
@@ -771,18 +775,18 @@ button {
 
 .review__name {
     display: block;
-    color: #383838;
+    color: var(--text-color);
     margin-bottom: 8px;
 }
 
 .review__country {
-    color: #BFBFBF;
+    color: var(--grey);
 }
 
 .review__text {
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
-    color: #383838;
+    color: var(--text-color);
 
 }
 
@@ -841,6 +845,7 @@ button {
 
 .offer {
     width: 100%;
+    /*padding: 0 calc(104px - 16px);*/
 }
 
 .offer__head {
@@ -852,7 +857,7 @@ button {
     text-align: center;
     margin: 120px 0 0;
     font-size: 40px;
-    color: #383838;
+    color: var(--text-color);
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
@@ -864,13 +869,13 @@ button {
     transform: translate(-50%);
     width: 100px;
     height: 4px;
-    background-color: #F5BD41;
+    background-color: var(--yellow);
 }
 
 .offer__block {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 104px 122px;
+    margin: 100px 0 122px;
 }
 
 .offer__subblock {
@@ -881,7 +886,7 @@ button {
     max-width: 100px;
     aspect-ratio: 1/1;
     margin: 4px auto;
-    fill: #3077C6
+    fill: var(--blue)
 }
 
 .offer__text {
@@ -892,23 +897,26 @@ button {
 }
 
 .footer {
-    width: 100%;
-    background-color: #10367C;
+    max-width: 100%;
+    background-color: var(--blue-bac);
     padding-bottom: 120px;
+    margin-top: -20px;
 }
 
 
 .footer__block {
     display: flex;
     justify-content: space-between;
-    padding: 120px 104px 40px;
+    justify-items: flex-start;
+    padding: 120px calc(104px * 2) 40px calc(104px - 16px);
+
 }
 
 .footer__title {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 500;
-    color: #FFFFFF;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -928,7 +936,7 @@ button {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: var(--white);
     text-decoration: none;
 }
 
@@ -936,7 +944,7 @@ button {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: var(--white);
     margin-left: 105px;
 
 }
@@ -1070,7 +1078,7 @@ button {
     .triphouse__logo_vector {
         width: 152px;
         height: 36px;
-        fill: #3077C6;
+        fill: var(--blue);
     }
 
     .triphouse__text-head {
@@ -1099,14 +1107,14 @@ button {
         display: inline-block;
         width: 36px;
         height: 24px;
-        fill: #FFFFFF;
+        fill: var(--white);
         margin-bottom: 8px;
     }
 
     .triphouse__inscription {
 
         font-size: 36px;
-        color: #FFFFFF;
+        color: var(--white);
         margin-bottom: 75px;
     }
 
@@ -1114,7 +1122,7 @@ button {
         grid-template-columns: 28% 1fr 20px 1fr 2fr;
         font-family: 'Roboto', sans-serif;
         font-size: 14px;
-        color: #FFFFFF;
+        color: var(--white);
         margin-left: 18px;
     }
 
@@ -1143,7 +1151,7 @@ button {
         padding: 0;
         margin: 22px 0 60px;
         border-radius: 8px;
-        background-color: #FFFFFF;
+        background-color: var(--white);
     }
 
     .triphouse__form-city {
@@ -1159,7 +1167,7 @@ button {
     }
 
     .triphouse__form-calendar {
-        border: 3px solid #F5BD41;
+        border: 3px solid var(--yellow);
         border-radius: 8px;
         margin: 0 -4px;
         padding: 18px 0 19px;
@@ -1270,7 +1278,7 @@ button {
 
 
     .polygon {
-        fill: #383838;
+        fill: var(--text-color);
         width: 5px;
         height: 15px;
     }
@@ -1308,8 +1316,8 @@ button {
         font-family: 'Roboto', sans-serif;
         font-size: 24px;
         text-align: center;
-        color: #383838;
-        background-color: #F3F3F4;
+        color: var(--text-color);
+        background-color: var(--white-background);
         margin: 0 -2px;
         padding: 17px 0;
 
@@ -1325,8 +1333,8 @@ button {
 
     .dest__regions:hover {
         border-radius: 8px;
-        background-color: #3077C6;
-        color: #FFFFFF;
+        background-color: var(--blue);
+        color: var(--white);
     }
 
     .dest__cities {
@@ -1336,8 +1344,8 @@ button {
 
     .dest__cities:hover {
         border-radius: 8px;
-        background-color: #3077C6;
-        color: #FFFFFF;
+        background-color: var(--blue);
+        color: var(--white);
     }
 
     .dest__places {
@@ -1353,8 +1361,8 @@ button {
 
     .dest__places-md:hover {
         border-radius: 8px;
-        background-color: #3077C6;
-        color: #FFFFFF;
+        background-color: var(--blue);
+        color: var(--white);
     }
 
     .destinations__block {
@@ -1381,7 +1389,7 @@ button {
         position: absolute;
         right: 2%;
         top: 63%;
-        box-shadow: 2px 2px 2px #959597;
+        box-shadow: 2px 2px 2px var(--box-shadow);
         width: 28px;
         height: 28px;
         border-radius: 50%;
@@ -1410,7 +1418,7 @@ button {
     }
 
     .polygon {
-        fill: #383838;
+        fill: var(--text-color);
         width: 5px;
         height: 15px;
     }
@@ -1538,10 +1546,11 @@ button {
         height: 100%;
         background-position: right;
         padding-top: 12px;
+        padding-bottom: 40px;
     }
 
     .triphouse__conteiner {
-        padding: 0 16px;
+        padding: 0;
     }
 
     .triphouse__head {
@@ -1554,7 +1563,7 @@ button {
     .triphouse__logo_vector {
         width: 122px;
         height: 24px;
-        fill: #3077C6;
+        fill: var(--blue);
     }
 
     .triphouse__text-head {
@@ -1577,14 +1586,14 @@ button {
         height: 24px;
         background-size: cover;
         margin: 0 12px;
-        fill: #FFFFFF;
+        fill: var(--white);
     }
 
     .triphouse__menu {
         display: inline-block;
         width: 24px;
         height: 16px;
-        fill: #FFFFFF;
+        fill: var(--white);
         margin: 0 0 2px;
     }
 
@@ -1598,13 +1607,13 @@ button {
     }
 
     .triphouse__form {
-        padding: 0 16px;
+        padding: 0;
     }
 
     .triphouse__form-line {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(4, 48px);
-        background-color: #F5BD41;
+        background-color: var(--yellow);
         gap: 8px;
         height: auto;
         padding: 8px;
@@ -1629,7 +1638,7 @@ button {
     }
 
     .triphouse__form-calendar {
-        background-color: #FFFFFF;
+        background-color: var(--white);
         grid-row: 2;
         display: grid;
         width: 100%;
@@ -1665,7 +1674,7 @@ button {
     ._c-check {
         font-size: 12px;
         font-family: 'Roboto', sans-serif;
-        text-decoration-color: #383838;
+        text-decoration-color: var(--text-color);
         padding-top: 6px;
         padding-left: 8px;
     }
@@ -1673,7 +1682,7 @@ button {
     ._cal {
         font-size: 15px;
         font-family: 'Roboto', sans-serif;
-        text-decoration-color: #383838;
+        text-decoration-color: var(--text-color);
         font-weight: 500;
         justify-self: start;
         width: 70%;
@@ -1689,7 +1698,7 @@ button {
 
     .triphouse__quantity {
         grid-row: 3;
-        background-color: #ffffff;
+        background-color: var(--white);
         border-radius: 8px;
         width: 100%;
         display: grid;
@@ -1717,8 +1726,8 @@ button {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, auto);
-        border-right: 1px solid #BFBFBF;
-        border-left: 1px solid #BFBFBF;
+        border-right: 1px solid var(--grey);
+        border-left: 1px solid var(--grey);
         width: 100%;
         padding-left: 8px;
     }
@@ -1776,7 +1785,15 @@ button {
     }
 
     .triphouse__img-as {
-        margin: 31px 0 40px 16px;
+        margin: 31px 0 0 16px;
+    }
+
+    .offer {
+        /*padding-bottom: 40px;*/
+    }
+
+    .offer__head {
+        margin: 0;
     }
 
     .offer__title {
@@ -1795,11 +1812,11 @@ button {
     }
 
     .offer__block:last-child {
-        margin-bottom: 8px;
+        margin-bottom: 35px;
     }
 
     .offer__subblock {
-        margin-bottom: 32px;
+        margin-bottom: 0;
     }
 
     .offer__vector {
@@ -1816,7 +1833,7 @@ button {
     }
 
     .homes__container {
-        padding: 40px 15px 56px 17px;
+        padding: 40px 15px 40px 17px;
     }
 
     .homes__title {
@@ -1830,13 +1847,14 @@ button {
 
     .homes_img {
         width: 100%;
-        max-width: 156px;
         aspect-ratio: 1/1;
-        margin-bottom: 12px;
+        margin-bottom: 8px;
     }
 
     .homes_signature {
         font-size: 12px;
+        margin-top: -6px;
+        margin-bottom: 4px;
     }
 
     .homes_text {
@@ -1844,9 +1862,9 @@ button {
     }
 
     .homes__pointer {
-        left: 96%;
-        top: 25%;
-        box-shadow: 2px 2px 2px #959597;
+        left: 95%;
+        top: 27%;
+        box-shadow: 2px 2px 2px var(--box-shadow);
         width: 28px;
         height: 28px;
         border-radius: 50%;
@@ -1855,9 +1873,9 @@ button {
     }
 
     .polygon {
-        fill: #383838;
+        fill: var(--text-color);
         width: 5px;
-        height: 13px;
+        height: 7px;
     }
 
     .homes__subblock-3 {
@@ -1875,7 +1893,7 @@ button {
 
     .destinations_title {
         font-size: 28px;
-        margin-bottom: 37px;
+        margin-bottom: 32px;
     }
 
     .destinations__navi {
@@ -1895,8 +1913,8 @@ button {
     .dest__list {
         font-size: 19px;
         padding: 5px 0;
-        background-color: #ffffff;
-        border: 1px solid #F3F3F4;
+        background-color: var(--white);
+        border: 1px solid var(--white-background);
     }
 
     .dest__regions {
@@ -1908,8 +1926,8 @@ button {
 
     .dest__regions:hover {
         border-radius: 8px;
-        background-color: #3077C6;
-        color: #FFFFFF;
+        background-color: var(--blue);
+        color: var(--white);
     }
 
     .dest__cities {
@@ -1921,8 +1939,8 @@ button {
 
     .dest__cities:hover {
         border-radius: 8px;
-        background-color: #3077C6;
-        color: #FFFFFF;
+        background-color: var(--blue);
+        color: var(--white);
     }
 
     .dest__places {
@@ -1938,12 +1956,12 @@ button {
 
     .dest__places-md:hover {
         border-radius: 8px;
-        background-color: #3077C6;
-        color: #FFFFFF;
+        background-color: var(--blue);
+        color: var(--white);
     }
 
     .destinations__block {
-        margin-bottom: 40px;
+        margin-bottom: 0;
         justify-items: center;
     }
 
@@ -1951,11 +1969,12 @@ button {
         width: 100%;
         max-width: 156px;
         aspect-ratio: 1/1;
-        margin-bottom: 8px;
+        /*margin-bottom: 8px;*/
     }
 
     .dest__text {
         font-size: 12px;
+        margin-top: -4px;
     }
 
 
@@ -1972,7 +1991,7 @@ button {
         position: absolute;
         right: 2%;
         top: 53%;
-        box-shadow: 2px 2px 2px #959597;
+        box-shadow: 2px 2px 2px var(--box-shadow);
         width: 28px;
         height: 28px;
         border-radius: 50%;
@@ -1981,15 +2000,19 @@ button {
         margin: 0;
     }
 
+    .position-md {
+        display: table;
+    }
+
     .sign__container {
         display: grid;
-        grid-template-columns: 16px 1fr 2fr 1fr;
+        grid-template-columns: 16px 1fr 2fr auto;
         grid-template-rows: auto;
         column-gap: 16px;
         max-width: 100%;
         padding: 24px 17px;
         margin: 0;
-        background-color: #ffffff;
+        background-color: var(--white);
 
     }
 
@@ -2011,14 +2034,14 @@ button {
         width: 58px;
         height: 58px;
         border-radius: 4px;
-        background-color: #3077C6;
+        background-color: var(--blue);
         margin: auto;
     }
 
     .sign__logo_vector {
         width: 53px;
         height: 11px;
-        fill: #ffffff;
+        fill: var(--white);
         margin: 23px 2px;
     }
 
@@ -2051,14 +2074,20 @@ button {
     .sign__install-md {
         display: inline-block;
         font-family: 'Roboto', sans-serif;
-        color: #3077C6;
+        color: var(--blue);
         font-size: 14px;
         font-weight: 500;
-        margin: auto;
+        margin-right: 0;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    .review {
+        display: table-header-group;
     }
 
     .reviews__container {
-        background-color: #EAF0F9;
+        background-color: var(--white-bac);
         padding: 40px 17px;
         height: auto;
     }
@@ -2089,6 +2118,7 @@ button {
 
     .review__img {
         max-width: 470px;
+        margin-bottom: 6px;
     }
 
     .review__price {
@@ -2096,12 +2126,12 @@ button {
     }
 
     .review__section {
-        padding: 12px 0 19px;
+        padding: 0 0 32px;
 
     }
 
     .review__navi {
-        margin-bottom: 16px;
+        margin-bottom: 13px;
     }
 
     .review__link {
@@ -2109,7 +2139,7 @@ button {
     }
 
     .review__hotel {
-        margin-bottom: 15px;
+        margin-bottom: 5px;
     }
 
     .review__grade {
@@ -2124,7 +2154,7 @@ button {
     }
 
     .review__account {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .review__account-circle {
@@ -2157,20 +2187,19 @@ button {
         width: 8px;
         height: 8px;
         border-radius: 50%;
-        border: 1px solid #333333;
+        border: 1px solid var(--border-black);
         margin-left: 8px;
 
     }
 
     .footer {
-        padding-top: 40px;
+        padding: 40px 67px 40px;
         width: 100%;
-        height: 203px;
     }
 
     .footer__vector {
         background-image: url(../images/logo_vector.svg);
-        fill: #FFFFFF;
+        fill: var(--white);
         margin: 0 auto 40px;
         width: 100px;
         height: 19px;
@@ -2186,8 +2215,9 @@ button {
     }
 
     .footer__block {
-        padding: 0 67px;
+        padding: 0;
         margin-bottom: 32px;
+        text-decoration: underline var(--white);
     }
 
     .__property {
@@ -2201,6 +2231,7 @@ button {
 
     .footer__end {
         font-size: 12px;
-        margin: 32px 70px 40px;
+        font-weight: 300;
+        margin: 0;
     }
 }
