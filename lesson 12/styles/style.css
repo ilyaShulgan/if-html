@@ -21,6 +21,11 @@
     max-width: 1232px;
     width: 100%;
     margin: 0 auto;
+    /*padding-left: 16px;*/
+    /*padding-right: 16px;*/
+}
+
+.contpadd {
     padding-left: 16px;
     padding-right: 16px;
 }
@@ -245,7 +250,6 @@ button {
 .triphouse__form {
     max-width: 1232px;
     margin: 0 auto;
-
 }
 
 .triphouse__form-line {
@@ -424,7 +428,7 @@ button {
 
 .destinations_container {
     max-width: 100%;
-    padding: 120px calc(104px - 16px) 120px 104px;
+    padding: 120px 104px 130px;
     position: relative;
 }
 
@@ -515,7 +519,7 @@ button {
     width: 100%;
     max-width: 296px;
     aspect-ratio: 1/1;
-    margin-bottom: 25px;
+    margin-bottom: 16px;
 }
 
 .dest__text {
@@ -566,8 +570,7 @@ button {
 }
 
 .sign__container {
-
-    padding: 24px 24px 52px;
+    padding: 16px 20px 52px;
     margin: 0 auto;
     background-color: var(--white-bac);
 }
@@ -854,6 +857,7 @@ button {
 }
 
 .offer__title {
+    position: relative;
     text-align: center;
     margin: 120px 0 0;
     font-size: 40px;
@@ -862,14 +866,21 @@ button {
     font-weight: 500;
 }
 
-.offer__line {
+.offer__title:after {
+    display: inline-block;
     position: absolute;
-    left: 50%;
-    bottom: -20px;
-    transform: translate(-50%);
-    width: 100px;
+    right: 50%;
+    transform: translate(50%);
+    bottom: -5px;
+    width: 0;
     height: 4px;
     background-color: var(--yellow);
+    content: "";
+    transition: width 0.3s ease-out;
+}
+
+.offer__title:hover:after {
+    width: 100px;
 }
 
 .offer__block {
@@ -908,7 +919,7 @@ button {
     display: flex;
     justify-content: space-between;
     justify-items: flex-start;
-    padding: 120px calc(104px * 2) 40px calc(104px - 16px);
+    padding: 120px 120px 40px 0;
 
 }
 
@@ -1272,7 +1283,7 @@ button {
         width: 30px;
         height: 30px;
         left: 98%;
-        top: 20%;
+        top: 26%;
         padding: 5px 8px 3px 11px;
     }
 
@@ -1366,12 +1377,13 @@ button {
     }
 
     .destinations__block {
+        justify-items: end;
         margin-bottom: 30px;
     }
 
     .destinations__img {
         width: 100%;
-        max-width: 160px;
+        max-width: 240px;
         aspect-ratio: 1/1;
         margin-bottom: 8px;
     }
@@ -1782,6 +1794,7 @@ button {
     .triphouse__img-gp {
         justify-self: end;
         margin-top: 31px;
+        margin-bottom: 0;
     }
 
     .triphouse__img-as {
@@ -1990,7 +2003,7 @@ button {
         display: inline-block;
         position: absolute;
         right: 2%;
-        top: 53%;
+        top: 60%;
         box-shadow: 2px 2px 2px var(--box-shadow);
         width: 28px;
         height: 28px;
@@ -2010,8 +2023,9 @@ button {
         grid-template-rows: auto;
         column-gap: 16px;
         max-width: 100%;
-        padding: 24px 17px;
+        padding: 24px 16px;
         margin: 0;
+        margin-bottom: 20px;
         background-color: var(--white);
 
     }
@@ -2082,15 +2096,15 @@ button {
         cursor: pointer;
     }
 
+    .reviews__container {
+        background-color: var(--white-bac);
+        padding: 40px 16px;
+    }
+
     .review {
         display: table-header-group;
     }
 
-    .reviews__container {
-        background-color: var(--white-bac);
-        padding: 40px 17px;
-        height: auto;
-    }
 
     .reviews__title {
         text-align: center;
